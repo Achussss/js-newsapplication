@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid m-0 p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid m-0 p-0">
+              <a class="navbar-brand text-warning" href="#">News24</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-1g-0">
+                  <li class="nav-item">
+                    <a class="nav-link active ms-5" aria-current="page" href="#">Business</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active ms-5" href="#">Entertainment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active ms-5" href="#">Health</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active ms-5" href="#">Sports</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active ms-5" href="#">Technology</a>
+                  </li>
+                 
+                    
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+                  <div class="container-fluid ">
+                    <h5 class="text-white me-auto ms-auto ">News <span class="text-warning">24</span></h5>
+                  </div>
+                </nav>
+              </div>
+        </div>
+        <div class="row mt-5 ">
+          <div class="col-9 " style="margin-left: 500px; width: 430px;">
+              <input type="text-warning " class="form-control rounded-pill bg-light" style="--bs-bg-opacity:60%;" id="id_category" placeholder="Todays News Highlights">
+      
+          </div>
+          <div class="col-3" style=" width: 100px;">
+              <button class="btn btn-success rounded-pill form-control" onclick="getNewsByCategory ()">Submit</button>
+          </div>
+      </div>
+      <div class="row mt-3">
+            <div class="col-6" >
+                
+
+            </div>
+            <div class="col-6" style="margin-left: 350px;">
+                <button class="btn btn-success rounded-pill form-control" onclick="getNews()">Click Here for todays Headlines</button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2 ms-5  " id="id_news">
+  <div class="col-4" ></div>
+  <div class="col-4"  ></div>
+  <div class="col-4" ></div>
+</div>
+
+<div class="row mt-2 ms-5  " id="id_division">
+  <div class="col-4"  ></div>
+  <div class="col-4"  ></div>
+  <div class="col-4" ></div>
+</div>
+    
+    
+</body>
+<script src="./script.js"></script>
+</html>
